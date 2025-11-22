@@ -178,11 +178,11 @@ function InfoCard({ icon, title, text, color }: InfoCardProps) {
       whileHover={{ scale: 1.05, y: -5 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
-      <div className="flex flex-col items-center text-center gap-4 md:flex-row md:items-start md:text-left">
-        <div className={`p-3 rounded-full ${colorVariants[color]} flex-shrink-0`}>{icon}</div>
-        <div className="space-y-1">
-          <h3 className="text-base sm:text-lg font-semibold">{title}</h3>
-          <p className="text-sm sm:text-base text-muted-foreground">{text}</p>
+      <div className="flex items-start gap-4">
+        <div className={`p-3 rounded-full ${colorVariants[color]}`}>{icon}</div>
+        <div>
+          <h3 className="font-semibold mb-1">{title}</h3>
+          <p className="text-muted-foreground">{text}</p>
         </div>
       </div>
     </motion.div>
