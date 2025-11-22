@@ -61,7 +61,6 @@ export default function Contact() {
         throw new Error(result.message || "Something went wrong");
       }
     } catch (error) {
-      console.error("Form submission failed:", error);
       toast({
         title: "Failed to send message",
         description: "Please try again or contact me directly.",
@@ -73,33 +72,32 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative overflow-hidden py-16 md:py-28 px-4 sm:px-6">
-      <div className="pointer-events-none hidden md:block absolute top-10 left-1/2 -translate-x-1/2 w-72 h-72 bg-primary/10 rounded-full blur-[110px] animate-float" />
-      <div className="pointer-events-none hidden lg:block absolute bottom-10 right-20 w-80 h-80 bg-secondary/10 rounded-full blur-[120px] animate-float" />
-
+    <section className="relative overflow-hidden py-10 sm:py-16 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12 md:mb-16 px-2"
+          className="text-center mb-10 sm:mb-16"
         >
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 gradient-text">Get In Touch</h1>
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4 gradient-text">
+            Get In Touch
+          </h1>
+          <p className="text-sm sm:text-lg text-muted-foreground max-w-xl mx-auto">
             Let's discuss your next project
           </p>
         </motion.div>
 
-        <div className="grid gap-8 md:gap-12 md:grid-cols-2">
+        <div className="grid gap-6 sm:gap-10 grid-cols-1 md:grid-cols-2">
           {/* Contact Info Section */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="space-y-6"
+            className="space-y-4 sm:space-y-6"
           >
-            <InfoCard icon={<Mail size={24} />} title="Email" text="sudharsan.ramachandran336@gmail.com" color="primary" />
-            <InfoCard icon={<Phone size={24} />} title="Phone" text="+91 94777 83527" color="secondary" />
-            <InfoCard icon={<MapPin size={24} />} title="Location" text="India, Tamil Nadu, Kanchipuram-631501" color="accent" />
+            <InfoCard icon={<Mail size={22} />} title="Email" text="sudharsan.ramachandran336@gmail.com" color="primary" />
+            <InfoCard icon={<Phone size={22} />} title="Phone" text="+91 94777 83527" color="secondary" />
+            <InfoCard icon={<MapPin size={22} />} title="Location" text="India, Tamil Nadu, Kanchipuram-631501" color="accent" />
           </motion.div>
 
           {/* Form Section */}
@@ -108,8 +106,10 @@ export default function Contact() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
           >
-            <form onSubmit={handleSubmit} className="glass-card p-6 sm:p-8 rounded-2xl space-y-6">
-              <h2 className="text-xl sm:text-2xl font-bold mb-2 gradient-text text-center md:text-left">Send a Message</h2>
+            <form onSubmit={handleSubmit} className="glass-card p-5 sm:p-8 rounded-2xl space-y-5 sm:space-y-6">
+              <h2 className="text-xl sm:text-2xl font-bold mb-2 gradient-text text-center md:text-left">
+                Send a Message
+              </h2>
 
               <FormInput
                 label="Name"
@@ -174,15 +174,17 @@ const colorVariants: Record<InfoCardProps["color"], string> = {
 function InfoCard({ icon, title, text, color }: InfoCardProps) {
   return (
     <motion.div
-      className="glass-card p-5 sm:p-6 rounded-2xl max-w-md mx-auto md:mx-0"
-      whileHover={{ scale: 1.05, y: -5 }}
-      transition={{ type: "spring", stiffness: 300 }}
+      className="glass-card p-5 sm:p-6 rounded-2xl w-full"
+      whileHover={{ scale: 1.03, y: -4 }}
+      transition={{ type: "spring", stiffness: 250 }}
     >
       <div className="flex items-start gap-4">
         <div className={`p-3 rounded-full ${colorVariants[color]}`}>{icon}</div>
-        <div>
-          <h3 className="font-semibold mb-1">{title}</h3>
-          <p className="text-muted-foreground">{text}</p>
+        <div className="min-w-0">
+          <h3 className="font-semibold mb-1 text-base sm:text-lg">{title}</h3>
+          <p className="text-muted-foreground break-words whitespace-normal text-sm sm:text-base">
+            {text}
+          </p>
         </div>
       </div>
     </motion.div>
@@ -238,7 +240,7 @@ function FormTextarea({ label, value, onChange, placeholder, delay }: FormTextar
         value={value}
         onChange={onChange}
         required
-        className="bg-background/60 min-h-[150px] focus-visible:ring-primary/70"
+        className="bg-background/60 min-h-[120px] sm:min-h-[150px] focus-visible:ring-primary/70"
         placeholder={placeholder}
       />
     </motion.div>
