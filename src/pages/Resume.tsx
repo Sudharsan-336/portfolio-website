@@ -39,7 +39,7 @@ export default function Resume() {
             className="glow-border hover:scale-105 transition-transform mx-auto"
             asChild
           >
-            <a href="/Sudharsan%20R%20-%20Resume.pdf" download="Sudharsan R - Resume.pdf">
+            <a href="/Sudharsan%20R-resume%202.pdf" download="Sudharsan R-resume 2.pdf">
               <Download className="mr-2" />
               Download Resume
             </a>
@@ -73,7 +73,7 @@ export default function Resume() {
                 transition={{ delay: 0.7 }}
               >
                 <div className="font-semibold">Java Programming Intern</div>
-                <div className="text-sm text-muted-foreground">CODTECH IT Solutions • 26th Sep – 11th Nov 2025</div>
+                <div className="text-sm text-muted-foreground">Vault of Codes • 05th Nov – 05th Dec 2025</div>
               </motion.div>
             </div>
           </motion.div>
