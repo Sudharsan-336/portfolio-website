@@ -39,7 +39,7 @@ export default function Resume() {
             className="glow-border hover:scale-105 transition-transform mx-auto"
             asChild
           >
-            <a href="/Sudharsan%20R-resume%202.pdf" download="Sudharsan R-resume 2.pdf">
+            <a href="/Sudharsan%20R-resume%202.pdf" download="Images/Sudharsan R-resume 2.pdf">
               <Download className="mr-2" />
               Download Resume
             </a>

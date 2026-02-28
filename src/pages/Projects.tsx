@@ -14,23 +14,23 @@ const projects: Array<{
   {
     title: "JavaMiniGames",
     description:"Built interactive, engaging, and visually appealing Java-based classic games using console and Swing GUI, applying OOP and event-driven programming for smooth, responsive, dynamic, and real-time gameplay with scoring and real-time input handling.",
-    tech: ["Java", "Swing", "OOP", "Collections Framework", "Event Handling"],
-    image: "MiniGames.jpeg",
-    github: "https://github.com/Sudharsan-336/JavaMiniGames",
+    tech: ["Java", "OOP", "Scanner", "Random", "Arrays", "2D Arrays", "Control Statements", "Input Validation"],
+    image: "Images/MiniGames.jpeg",
+    github: "https://github.com/Sudharsan-336/Java-Mini-Games.git",
   },
   {
     title: "ATM Simulation System",
     description: "The ATM Simulation System is a Java-based project that simulates real-world ATM functionality. Users can perform essential banking operations such as deposits, withdrawals, transfers, and balance inquiries. The system also supports account creation, PIN management, transaction history, and file-based data persistence.",
-    tech: ["Java", "OOP", "File Handling", "Exception Handling", "Collections Framework"],
-    image: "ATM System.jpg",
-    github: "https://github.com/Sudharsan-336/ATM-Project",
+    tech: ["Java", "OOP", "File Handling", "HashMap", "LinkedList", "Collections Framework", "Scanner", "Exception Handling", "DecimalFormat"],
+    image: "Images/ATM System.jpg",
+    github: "https://github.com/Sudharsan-336/ATM-Simulation-System.git",
   },
   {
-    title: "Hotel Management System",
+    title: "Network Info Using Java",
    description: "Developed a Java-based Hotel Management System with room booking, food ordering, and billing. Implemented Luxury and Deluxe Rooms using OOP concepts and Java Serialization for data persistence, demonstrating skills in Java programming and event-driven application development.",
     tech: ["Java", "OOP", "File Handling", "Serialization", "Exception Handling", "Collections", "ArrayLists"],
-    image: "Hotel.jpg",
-    github: "https://github.com/Sudharsan-336/Hotel-Management-System/tree/main",
+    image: "images/Network Analyzer.jpg",
+    github: "https://github.com/Sudharsan-336/Network-Info-Using-Java.git",
   },
 
 ];
