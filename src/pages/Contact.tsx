@@ -97,7 +97,7 @@ export default function Contact() {
             transition={{ delay: 0.2 }}
             className="space-y-4 sm:space-y-6"
           >
-            <InfoCard icon={<Mail size={22} />} title="Email" text="sudharsan.ramachandran336@gmail.com" color="primary" />
+            <InfoCard icon={<Mail size={22} />} title="Email" text="sudharsan.ramchandran336@gmail.com" color="primary" />
             <InfoCard icon={<Phone size={22} />} title="Phone" text="+91 94777 83527" color="secondary" />
             <InfoCard icon={<MapPin size={22} />} title="Location" text="India, Tamil Nadu, Kanchipuram-631501" color="accent" />
           </motion.div>
