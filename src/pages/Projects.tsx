@@ -17,14 +17,14 @@ const projects: Array<{
     title: "ATM Simulation System",
     description: "It is a Java-based project that simulates real-world ATM functionality. Users can perform essential banking operations such as deposits, withdrawals, transfers, and balance inquiries. The system also supports account creation, PIN management, transaction history, and file-based data persistence.",
     tech: ["Java", "OOP", "File Handling", "HashMap", "LinkedList", "Collections Framework", "Scanner", "Exception Handling", "DecimalFormat"],
-    image: "images/atm_simulation_system.jpg",
+    image: "ATM_Simulation_System.jpg",
     github: "https://github.com/Sudharsan-336/ATM-Simulation-System.git",
   },
   {
     title: "Chatbot AI Platform",
    description: "Developed a Java-based Hotel Management System with room booking, food ordering, and billing. Implemented Luxury and Deluxe Rooms using OOP concepts and Java Serialization for data persistence, demonstrating skills in Java programming and event-driven application development.",
     tech: ["HTML", "CSS", "JavaScript", "Python", "NLP", "Machine Learning"],
-    image: "images/chatbot_ai_platform.jpg",
+    image: "Chatbot_AI_Platform.jpg",
     github: "https://github.com/Sudharsan-336/Chatbot-AI.git",
   },
 
