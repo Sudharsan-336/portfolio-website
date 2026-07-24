@@ -86,11 +86,13 @@ export default function Hero() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2 }}
               >
-                Third-year engineering student specializing in Computer Science and Business Systems (CSBS) with a strong foundation in{" "}
+                Final-year Computer Science and Business Systems (CSBS) student with hands-on experience in {" "}
                 <span className="text-primary font-semibold">Java</span>,{" "}
-                <span className="text-primary font-semibold">MySQL</span>,{" "}
+                <span className="text-primary font-semibold">MySQL</span>, and modern web technologies including{" "}
                 <span className="text-primary font-semibold">HTML</span>,{" "}
-                <span className="text-primary font-semibold">CSS</span>, and Web Development. Seeking an entry-level software development opportunity to apply technical skills, problem-solving abilities, logical thinking, and continuous learning in a growth-oriented organization.
+                <span className="text-primary font-semibold">CSS</span>,{" "}
+                <span className="text-primary font-semibold">JavaScript</span>, and{" "} 
+                <span className="text-primary font-semibold">React</span>. I enjoy breaking down complex problems into structured solutions and have a genuine curiosity for how technology and business intersect. I'm now looking for an entry-level software development role where I can apply what I've learned, sharpen my skills further, and contribute to a team that values growth and innovation.
               </motion.p>
             </motion.div>
 

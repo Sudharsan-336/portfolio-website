@@ -7,7 +7,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
-const WEB3FORMS_ACCESS_KEY = "246cab45-5e67-4b95-813d-b5a511aea172";
+const WEB3FORMS_ACCESS_KEY = "180578fe-c3b5-45d7-b85d-27b563223c43";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -97,9 +97,9 @@ export default function Contact() {
             transition={{ delay: 0.2 }}
             className="space-y-4 sm:space-y-6"
           >
-            <InfoCard icon={<Mail size={22} />} title="Email" text="sudharsan.ramchandran336@gmail.com" color="primary" />
+            <InfoCard icon={<Mail size={22} />} title="Email" text="sudharsan.r03032006@gmail.com" color="primary" />
             <InfoCard icon={<Phone size={22} />} title="Phone" text="+91 94777 83527" color="secondary" />
-            <InfoCard icon={<MapPin size={22} />} title="Location" text="India, Tamil Nadu, Kanchipuram-631501" color="accent" />
+            <InfoCard icon={<MapPin size={22} />} title="Location" text="India, Tamil Nadu, Kanchipuram-631 501" color="accent" />
           </motion.div>
 
           <motion.div
